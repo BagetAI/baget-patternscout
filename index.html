@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PatternScout | The Browser's Moral Compass</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">PATTERNSCOUT</div>
+            <ul class="nav-links">
+                <li><a href="#how-it-works">HOW IT WORKS</a></li>
+                <li><a href="#integrity-score">INTEGRITY SCORE</a></li>
+                <li><a href="#reporting">REPORTING</a></li>
+                <li><a href="#waitlist" class="cta-mini">JOIN WAITLIST</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <div class="hero-content">
+                <h1>SEE WHAT THEY<br><span class="accent">ARE HIDING</span></h1>
+                <p class="hero-sub">The browser's moral compass for e-commerce. PatternScout highlights manipulative design patterns in real-time, protecting you from roach motels, drip pricing, and false urgency.</p>
+                <div class="hero-actions">
+                    <a href="#waitlist" class="cta-primary">GET THE EXTENSION</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="500" height="300" fill="#f2f2f2" />
+                    <rect x="20" y="20" width="460" height="30" fill="#000" />
+                    <circle cx="40" cy="35" r="5" fill="#E63946" />
+                    <circle cx="60" cy="35" r="5" fill="#fff" />
+                    <circle cx="80" cy="35" r="5" fill="#fff" />
+                    <rect x="20" y="60" width="100" height="220" fill="#fff" />
+                    <rect x="130" y="60" width="350" height="220" fill="#fff" />
+                    <!-- Manipulative Pattern Highlight -->
+                    <rect x="350" y="80" width="110" height="40" fill="none" stroke="#E63946" stroke-width="2" />
+                    <text x="355" y="75" font-family="monospace" font-size="8" fill="#E63946">[TYPE: FALSE URGENCY]</text>
+                    <rect x="150" y="200" width="310" height="60" fill="none" stroke="#E63946" stroke-width="2" />
+                    <text x="155" y="195" font-family="monospace" font-size="8" fill="#E63946">[TYPE: ROACH MOTEL]</text>
+                    <!-- Content lines -->
+                    <rect x="150" y="90" width="150" height="10" fill="#f2f2f2" />
+                    <rect x="150" y="110" width="180" height="10" fill="#f2f2f2" />
+                    <rect x="150" y="130" width="120" height="10" fill="#f2f2f2" />
+                </svg>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="section bg-gray">
+            <div class="container grid">
+                <div class="section-title">
+                    <h2>THE<br><span class="accent">RED-LINE</span><br>OVERLAY</h2>
+                </div>
+                <div class="section-text">
+                    <p>Unlike standard ad-blockers that simply hide content, PatternScout exposes the intent behind the interface. Our "Red-Line" overlay highlights deceptive UX elements the moment they load.</p>
+                    <ul class="pattern-list">
+                        <li><strong>ROACH MOTELS:</strong> Hard-to-cancel subscriptions.</li>
+                        <li><strong>DRIP PRICING:</strong> Hidden fees added at the last second.</li>
+                        <li><strong>FALSE SCARCITY:</strong> Fake inventory timers and "Only 1 Left" labels.</li>
+                        <li><strong>CONFIRMSHAMING:</strong> Guilt-tripping copy used to nudge your choices.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="integrity-score" class="section">
+            <div class="container grid">
+                <div class="section-text order-2">
+                    <p>Every retailer receives a live Integrity Score from 1 to 100 based on their use of dark patterns. Shop with brands that respect your agency, or know exactly when you're being manipulated.</p>
+                    <div class="score-visualization">
+                        <div class="score-box">
+                            <span class="score-label">AMAZON.COM</span>
+                            <span class="score-value accent">42</span>
+                            <span class="score-status">POOR INTEGRITY</span>
+                        </div>
+                        <div class="score-box">
+                            <span class="score-label">PATAGONIA.COM</span>
+                            <span class="score-value">98</span>
+                            <span class="score-status">HIGH INTEGRITY</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-title order-1">
+                    <h2>THE<br>INTEGRITY<br>SCORE</h2>
+                </div>
+            </div>
+        </section>
+
+        <section id="reporting" class="section bg-black text-white">
+            <div class="container grid">
+                <div class="section-title">
+                    <h2 class="text-white">ONE-CLICK<br><span class="accent">ADVOCACY</span></h2>
+                </div>
+                <div class="section-text">
+                    <p>PatternScout streamlines consumer protection. With a single click, document and report deceptive design directly to the FTC and consumer advocacy groups.</p>
+                    <p>We provide the evidence you need to hold retailers accountable under the 2026 Digital Fairness standards.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="waitlist" class="section container">
+            <div class="waitlist-card">
+                <h2>JOIN THE INTEGRITY LAYER</h2>
+                <p>Be the first to access the PatternScout beta. Launching Q2 2026.</p>
+                <form id="waitlist-form">
+                    <input type="email" id="email" placeholder="ENTER YOUR EMAIL" required>
+                    <button type="submit" id="submit-btn">ACCESS BETA</button>
+                </form>
+                <div id="form-message"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="logo">PATTERNSCOUT</div>
+            <div class="footer-info">
+                <p>&copy; 2026 PATTERNSCOUT. PROTECTING THE WEB'S INTEGRITY.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

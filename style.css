@@ -1,0 +1,315 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --accent: #E63946;
+    --gray: #F2F2F2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white);
+    color: var(--black);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    font-family: 'Bebas Neue', cursive;
+    line-height: 0.9;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: clamp(4rem, 10vw, 8rem);
+}
+
+h2 {
+    font-size: clamp(3rem, 8vw, 5rem);
+}
+
+.accent {
+    color: var(--accent);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.section {
+    padding: 8rem 0;
+}
+
+.bg-gray {
+    background-color: var(--gray);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+/* Nav */
+header {
+    padding: 2rem 0;
+    border-bottom: 2px solid var(--black);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.cta-mini {
+    border: 2px solid var(--black);
+    padding: 0.5rem 1rem;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    gap: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-sub {
+    font-size: 1.25rem;
+    max-width: 500px;
+    margin-bottom: 2rem;
+}
+
+.hero-visual {
+    flex: 1;
+}
+
+.hero-visual svg {
+    width: 100%;
+    height: auto;
+    border: 2px solid var(--black);
+}
+
+.cta-primary {
+    display: inline-block;
+    background-color: var(--black);
+    color: var(--white);
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    transition: background-color 0.2s;
+}
+
+.cta-primary:hover {
+    background-color: var(--accent);
+}
+
+/* Grid Layouts */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.section-title {
+    position: sticky;
+    top: 2rem;
+}
+
+.section-text p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.pattern-list {
+    list-style: none;
+}
+
+.pattern-list li {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.pattern-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.6rem;
+    width: 10px;
+    height: 10px;
+    background-color: var(--accent);
+}
+
+/* Score Visualization */
+.score-visualization {
+    display: flex;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.score-box {
+    border: 2px solid var(--black);
+    padding: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score-label {
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.score-value {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5rem;
+}
+
+.score-status {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+/* Waitlist */
+.waitlist-card {
+    background-color: var(--gray);
+    padding: 4rem;
+    text-align: center;
+    border: 2px solid var(--black);
+}
+
+.waitlist-card h2 {
+    font-size: 4rem;
+}
+
+.waitlist-card p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+#waitlist-form {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 0;
+}
+
+#waitlist-form input {
+    flex: 1;
+    padding: 1.5rem;
+    border: 2px solid var(--black);
+    border-right: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    outline: none;
+}
+
+#waitlist-form button {
+    background-color: var(--black);
+    color: var(--white);
+    border: 2px solid var(--black);
+    padding: 0 2rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#waitlist-form button:hover {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+
+#form-message {
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+/* Footer */
+footer {
+    padding: 4rem 0;
+    border-top: 2px solid var(--black);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info p {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-sub {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .section-title {
+        position: static;
+    }
+    .order-1 { order: 1; }
+    .order-2 { order: 2; }
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
