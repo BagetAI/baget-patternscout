@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      font-family: 'Inter', sans-serif;
+      padding: 16px;
+      background: #F1FAEE;
+      color: #1D3557;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    .status {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #457B9D;
+      margin-right: 4px;
+    }
+    .active .status {
+      background: #E63946;
+    }
+    .score-box {
+      background: white;
+      border-radius: 8px;
+      padding: 12px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .score-value {
+      font-size: 32px;
+      font-weight: bold;
+      color: #E63946;
+    }
+    .footer {
+      margin-top: 16px;
+      font-size: 10px;
+      color: #457B9D;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <strong>PatternScout v0.1</strong>
+    <div class="active"><span class="status"></span> Active</div>
+  </div>
+  
+  <div class="score-box">
+    <div>Site Integrity Score</div>
+    <div class="score-value">84</div>
+    <div style="font-size: 12px;">3 patterns detected on this domain.</div>
+  </div>
+
+  <div class="footer">
+    Monitoring for FTC Compliance (2026 Standards)
+  </div>
+</body>
+</html>

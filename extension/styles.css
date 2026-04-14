@@ -1,0 +1,49 @@
+.ps-pattern-detected {
+  outline: 3px solid #E63946 !important;
+  outline-offset: 2px !important;
+  position: relative !important;
+  transition: outline 0.3s ease-in-out;
+}
+
+.ps-integrity-tooltip {
+  visibility: hidden;
+  width: 240px;
+  background-color: #1D3557;
+  color: #F1FAEE;
+  text-align: left;
+  border-radius: 4px;
+  padding: 12px;
+  position: absolute;
+  z-index: 10000;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border-top: 4px solid #E63946;
+}
+
+.ps-pattern-detected:hover .ps-integrity-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.ps-report-btn {
+  margin-top: 8px;
+  background: #E63946;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.ps-report-btn:hover {
+  background: #C32F3A;
+}
