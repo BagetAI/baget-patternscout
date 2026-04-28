@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const feedContainer = document.getElementById('patterns-database');
         
         try {
-            const response = await fetch(`https://baget.ai/api/public/databases/${dbId}/rows`);
+            const response = await fetch(`https://app.baget.ai/api/public/databases/${dbId}/rows`);
             if (!response.ok) throw new Error('Database fetch failed');
             const data = await response.json();
             

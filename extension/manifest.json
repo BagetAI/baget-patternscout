@@ -8,7 +8,7 @@
     "activeTab"
   ],
   "host_permissions": [
-    "https://baget.ai/api/public/databases/*",
+    "https://app.baget.ai/api/public/databases/*",
     "http://*/*",
     "https://*/*"
   ],

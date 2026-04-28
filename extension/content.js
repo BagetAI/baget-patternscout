@@ -1,5 +1,5 @@
 const DB_ID = "1d2babb7-b15e-4417-b1d0-bed78766cfa9";
-const API_URL = `https://baget.ai/api/public/databases/${DB_ID}/rows`;
+const API_URL = `https://app.baget.ai/api/public/databases/${DB_ID}/rows`;
 
 async function initPatternScout() {
   const currentUrl = window.location.href;
